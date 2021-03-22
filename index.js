@@ -1,9 +1,6 @@
 console.warn("Welcome to DaTI v0.8");
-const Database = require("@replit/database")
-const db = new Database()
 var pastequations = [];
 const x = 0;
-var key = 0;
 while (x == 0) {
   var equation = prompt("Equation: ");
   if (equation == "Addition") {
@@ -17,12 +14,7 @@ while (x == 0) {
         var totalSum = sumI + sumII;
         console.log("Sum: "+totalSum);
         pastequations.push(numI+" + "+numII+" = "+totalSum);
-        key++;
-        db.set(key, totalSum).then(() => {});
-      }
-    } 
-  }
-    else if (equation == "Subtraction") {
+      }}}else if (equation == "Subtraction") {
       var equ = "Subtraction";
       var numI = prompt("Minuend: ")
       if (numI) {
@@ -33,12 +25,7 @@ while (x == 0) {
           var totalSum = sumI - sumII;
           console.log("Difference: "+totalSum);
           pastequations.push(numI+" - "+numII+" = "+totalSum);
-          key++;
-          db.set(key, totalSum).then(() => {});
-        }
-      }
-    }
-    else if (equation == "Division") {
+        }}}else if (equation == "Division") {
       var equ = "Division";
       var numI = prompt("Dividend: ")
       if (numI) {
@@ -49,11 +36,7 @@ while (x == 0) {
           var totalSum = sumI / sumII;
           console.log("Quotient: "+totalSum);
           pastequations.push(numI+" / "+numII+" = "+totalSum);
-          key++;
-          db.set(key, totalSum).then(() => {});
-        }
-      }
-    } else if (equation == "Multiplication") {
+        }}} else if (equation == "Multiplication") {
       var equ = "Multiplication";
       var numI = prompt("Factor: ")
       if (numI) {
@@ -64,11 +47,7 @@ while (x == 0) {
           var totalSum = sumI * sumII;
           console.log("Product: "+totalSum);
           pastequations.push(numI+" * "+numII+" = "+totalSum);
-          key++;
-          db.set(key, totalSum).then(() => {});
-        }
-      }
-    } else if (equation == "Previous") {
+        }}} else if (equation == "Previous") {
       if (equ == "Addition") {
       console.log(numI+" + "+numII+" = "+totalSum);
       } else if (equ == "Subtraction") {
@@ -77,9 +56,13 @@ while (x == 0) {
       console.log(numI+" / "+numII+" = "+totalSum);
       } else if (equ == "Multiplication") {
       console.log(numI+" * "+numII+" = "+totalSum);
-      }
-    }
-      else if (equation == "All") {
+      } else if (equ == "Exponent") {
+      console.log(numI+" ^ "+numII+" = "+totalSum);
+      } else if (equ == "Absolute Value") {
+      console.log("The absolute value of "+numI+" equals "+totalSum);
+      } else if (equ == "Diameter") {
+      console.log(numI+" * 2 = "+totalSum);
+      }}else if (equation == "All") {
         console.warn("All equations:\n___");
         if (pastequations.length == 0) {
           pastequations.push("None");
@@ -89,8 +72,7 @@ while (x == 0) {
           console.log(letter);
         }
         console.warn("–––");
-      }
-      else if (equation == "Exponent") {
+      }else if (equation == "Exponent") {
       var equ = "Exponent";
       var numI = prompt("Base: ")
       if (numI) {
@@ -101,11 +83,7 @@ while (x == 0) {
           var totalSum = Math.pow(sumI, sumII);
           console.log("Solution: "+totalSum);
           pastequations.push(numI+" ^ "+numII+" = "+totalSum);
-          key++;
-          db.set(key, totalSum).then(() => {});
-        }
-      }
-    } else if (equation == "Absolute Value") {
+        }}} else if (equation == "Absolute Value") {
       var equ = "Absolute Value";
       var numI = prompt("Value: ")
       if (numI) {
@@ -113,8 +91,12 @@ while (x == 0) {
         var totalSum = Math.abs(sumI);
         console.log("Solution: "+totalSum);
         pastequations.push(totalSum);
-        key++;
-        db.set(key, totalSum).then(() => {});
-      }
-    }
-  }
+      }}else if (equation == "Diameter") {
+      var equ = "Diameter";
+      var numI = prompt("Radius: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var totalSum = sumI * 2;
+        console.log("Solution: "+totalSum);
+        pastequations.push(numI+" * 2 = "+totalSum);
+        }}}
