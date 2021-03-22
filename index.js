@@ -1,4 +1,4 @@
-console.warn("Welcome to DaTI v0.8");
+console.warn("Welcome to DaTI v0.82");
 var pastequations = [];
 const x = 0;
 while (x == 0) {
