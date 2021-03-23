@@ -2,7 +2,7 @@ console.warn("Welcome to DaTI v0.85");
 var pastequations = [];
 const x = 0;
 while (x == 0) { var equation = prompt("Equation: ");
-  if (equation == "Addition") {
+  if (equation == "Addition" || "addition") {
     var equ = "Addition";
     var numI = prompt("Addend 1: ")
     if (numI) {
@@ -13,7 +13,7 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = sumI + sumII;
         console.log("Sum: "+totalSum);
         pastequations.push(numI+" + "+numII+" = "+totalSum);
-      }}}else if (equation == "Subtraction") {
+      }}}else if (equation == "Subtraction" || "subtraction") {
       var equ = "Subtraction";
       var numI = prompt("Minuend: ")
       if (numI) {
@@ -24,7 +24,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = sumI - sumII;
           console.log("Difference: "+totalSum);
           pastequations.push(numI+" - "+numII+" = "+totalSum);
-        }}}else if (equation == "Division") {
+        }}}else if (equation == "Division" || "division") {
       var equ = "Division";
       var numI = prompt("Dividend: ")
       if (numI) {
@@ -35,7 +35,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = sumI / sumII;
           console.log("Quotient: "+totalSum);
           pastequations.push(numI+" / "+numII+" = "+totalSum);
-        }}} else if (equation == "Multiplication") {
+        }}} else if (equation == "Multiplication" || "multiplication") {
       var equ = "Multiplication";
       var numI = prompt("Factor: ")
       if (numI) {
@@ -46,7 +46,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = sumI * sumII;
           console.log("Product: "+totalSum);
           pastequations.push(numI+" * "+numII+" = "+totalSum);
-        }}} else if (equation == "Previous") {
+        }}} else if (equation == "Previous" || "previous") {
       if (equ == "Addition") {
       console.log(numI+" + "+numII+" = "+totalSum);
       } else if (equ == "Subtraction") {
@@ -71,7 +71,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           console.log(letter);
         }
         console.warn("–––");
-      }else if (equation == "Exponent") {
+      }else if (equation == "Exponent" || "exponent") {
       var equ = "Exponent";
       var numI = prompt("Base: ")
       if (numI) {
@@ -82,7 +82,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = Math.pow(sumI, sumII);
           console.log("Solution: "+totalSum);
           pastequations.push(numI+" ^ "+numII+" = "+totalSum);
-        }}} else if (equation == "Absolute Value") {
+        }}} else if (equation == "Absolute Value" || "Absolute value" || "absolute value") {
       var equ = "Absolute Value";
       var numI = prompt("Value: ")
       if (numI) {
@@ -90,14 +90,14 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = Math.abs(sumI);
         console.log("Solution: "+totalSum);
         pastequations.push(totalSum);
-      }}else if (equation == "Diameter") { var equ = "Diameter";
+      }}else if (equation == "Diameter" || "diameter") { var equ = "Diameter";
       var numI = prompt("Radius: ")
       if (numI) {
         var sumI = parseFloat(numI);
         var totalSum = sumI * 2;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" * 2 = "+totalSum);
-        }}else if (equation == "Radius") { var equ = "Radius";
+        }}else if (equation == "Radius" || "radius") { var equ = "Radius";
       var numI = prompt("Circumference: ")
       if (numI) {
         var sumI = parseFloat(numI);
@@ -105,7 +105,7 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = sumI / tpi;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" / 2π = "+totalSum);
-        }}else if (equation == "Area [C]") { var equ = "Area [C]";
+        }}else if (equation == "Area [C]" || "area [C]" || "area [c]") { var equ = "Area [C]";
       var numI = prompt("Radius: ")
       if (numI) {
         var sumI = parseFloat(numI);
@@ -113,14 +113,14 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = Math.PI * (sumI * sumI);
         console.log("Solution: "+totalSum);
         pastequations.push("π"+numI+" ^ 2 = "+totalSum);
-        }}else if (equation == "Perimeter [S]") { var equ = "Perimeter [S]";
+        }}else if (equation == "Perimeter [S]" || "perimeter [S]" || "perimeter [s]") { var equ = "Perimeter [S]";
       var numI = prompt("Width/Length: ")
       if (numI) {
         var sumI = parseFloat(numI);
         var totalSum = sumI * 4;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" * 4 = "+totalSum);
-        }}else if (equation == "Perimeter [R]") { var equ = "Perimeter [R]";
+        }}else if (equation == "Perimeter [R]" || "perimeter [R]" || "perimeter [r]") { var equ = "Perimeter [R]";
       var numI = prompt("Width: ")
       if (numI) {
         var sumI = parseFloat(numI);
@@ -130,7 +130,7 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = sumI * 2 + sumII * 2;
           console.log("Solution: "+totalSum);
           pastequations.push(numI+" * 2 + "+numII+" * 2 = "+totalSum);
-        }}}else if (equation == "Area [R]") { var equ = "Area [R]";
+        }}}else if (equation == "Area [R]" || "area [R]" || "area [r]") { var equ = "Area [R]";
       var numI = prompt("Width: ")
       if (numI) {
         var sumI = parseFloat(numI);
@@ -140,14 +140,14 @@ while (x == 0) { var equation = prompt("Equation: ");
           var totalSum = sumI * sumII;
           console.log("Solution: "+totalSum);
           pastequations.push(numI+" * "+numII+" = "+totalSum);
-        }}}else if (equation == "Area [S]") { var equ = "Area [S]";
+        }}}else if (equation == "Area [S]" || "area [S]" || "area [s]") { var equ = "Area [S]";
       var numI = prompt("Width/Length: ")
       if (numI) {
         var sumI = parseFloat(numI);
         var totalSum = sumI * sumI;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" * "+numI+" = "+totalSum);
-        }}else if (equation == "Function") { var equ = "Function";
+        }}else if (equation == "Function" || "function") { var equ = "Function";
       var numI = prompt("Notation: ")
       if (numI) {
         var sumI = parseFloat(numI);
