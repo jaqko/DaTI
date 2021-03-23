@@ -97,4 +97,12 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = sumI * 2;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" * 2 = "+totalSum);
+        }}else if (equation == "Radius") { var equ = "Radius";
+      var numI = prompt("Circumference: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var tpi = 2 * Math.PI;
+        var totalSum = sumI / tpi;
+        console.log("Solution: "+totalSum);
+        pastequations.push(numI+" / 2π = "+totalSum);
         }}}
