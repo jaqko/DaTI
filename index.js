@@ -1,4 +1,4 @@
-console.warn("Welcome to DaTI v0.82");
+console.warn("Welcome to DaTI v0.84");
 var pastequations = [];
 const x = 0;
 while (x == 0) { var equation = prompt("Equation: ");
@@ -113,4 +113,38 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = Math.PI * (sumI * sumI);
         console.log("Solution: "+totalSum);
         pastequations.push("π"+numI+" ^ 2 = "+totalSum);
+        }}else if (equation == "Perimeter [S]") { var equ = "Perimeter [S]";
+      var numI = prompt("Width/Length: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var totalSum = sumI * 4;
+        console.log("Solution: "+totalSum);
+        pastequations.push(numI+" * 4 = "+totalSum);
+        }}else if (equation == "Perimeter [R]") { var equ = "Perimeter [R]";
+      var numI = prompt("Width: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var numII = prompt("Length: ")
+        if (numII) {
+          var sumII = parseFloat(numII);
+          var totalSum = sumI * 2 + sumII * 2;
+          console.log("Solution: "+totalSum);
+          pastequations.push(numI+" * 2 + "+numII+" * 2 = "+totalSum);
+        }}}else if (equation == "Area [R]") { var equ = "Area [R]";
+      var numI = prompt("Width: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var numII = prompt("Length: ")
+        if (numII) {
+          var sumII = parseFloat(numII);
+          var totalSum = sumI * sumII;
+          console.log("Solution: "+totalSum);
+          pastequations.push(numI+" * "+numII+" = "+totalSum);
+        }}}else if (equation == "Area [S]") { var equ = "Area [S]";
+      var numI = prompt("Width/Length: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var totalSum = sumI * sumI;
+        console.log("Solution: "+totalSum);
+        pastequations.push(numI+" * "+numI+" = "+totalSum);
         }}}
