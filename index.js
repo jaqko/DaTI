@@ -1,4 +1,4 @@
-console.warn("Welcome to DaTI v0.84");
+console.warn("Welcome to DaTI v0.85");
 var pastequations = [];
 const x = 0;
 while (x == 0) { var equation = prompt("Equation: ");
@@ -147,4 +147,14 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = sumI * sumI;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" * "+numI+" = "+totalSum);
-        }}}
+        }}else if (equation == "Function") { var equ = "Function";
+      var numI = prompt("Notation: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var numI = prompt("Input: ")
+        if (numII) {
+          var sumII = parseFloat(numII);
+          var totalSum = sumI * sumII;
+          console.log("Solution: "+totalSum);
+          pastequations.push(numI+" * "+numII+" = "+totalSum);
+        }}}}
