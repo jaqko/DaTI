@@ -1,8 +1,7 @@
 console.warn("Welcome to DaTI v0.82");
 var pastequations = [];
 const x = 0;
-while (x == 0) {
-  var equation = prompt("Equation: ");
+while (x == 0) { var equation = prompt("Equation: ");
   if (equation == "Addition") {
     var equ = "Addition";
     var numI = prompt("Addend 1: ")
@@ -91,8 +90,7 @@ while (x == 0) {
         var totalSum = Math.abs(sumI);
         console.log("Solution: "+totalSum);
         pastequations.push(totalSum);
-      }}else if (equation == "Diameter") {
-      var equ = "Diameter";
+      }}else if (equation == "Diameter") { var equ = "Diameter";
       var numI = prompt("Radius: ")
       if (numI) {
         var sumI = parseFloat(numI);
