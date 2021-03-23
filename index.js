@@ -105,4 +105,12 @@ while (x == 0) { var equation = prompt("Equation: ");
         var totalSum = sumI / tpi;
         console.log("Solution: "+totalSum);
         pastequations.push(numI+" / 2π = "+totalSum);
+        }}else if (equation == "Area [C]") { var equ = "Area [C]";
+      var numI = prompt("Radius: ")
+      if (numI) {
+        var sumI = parseFloat(numI);
+        var tpi = Math.PI * sumI;
+        var totalSum = Math.PI * (sumI * sumI);
+        console.log("Solution: "+totalSum);
+        pastequations.push("π"+numI+" ^ 2 = "+totalSum);
         }}}
