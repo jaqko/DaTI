@@ -7,9 +7,9 @@ DaTI is a basic calculator service written in vanilla JavaScript. This is a side
 ___
 Work in Progress | Done
 ------------ | -------------
-Functions | Addition
-Slope-Intercept Form | Subtraction
-None| Multiplication
+Slope-Intercept Form | Addition
+None | Subtraction
+None | Multiplication
 None | Division
 None | Exponents
 None | Absolute Value
@@ -18,3 +18,4 @@ None | Radius
 None | Circumference
 None | Perimeter
 None | Area
+None | Functions
