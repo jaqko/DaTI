@@ -19,3 +19,8 @@ None | Circumference
 None | Perimeter
 None | Area
 None | Functions
+
+# How to Use
+
+___
+Just type in the name of your beginning equation. For instance, if you want to add, just type `Addition`, `Subtraction` for subtracting things, etc. A full list will come later.
